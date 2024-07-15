@@ -1,0 +1,225 @@
+:root {
+  --bg: #1f242d;
+  --second-bg: #323946;
+  --text: #fff;
+  --main: #0ef;
+  --second-main: rgb(9, 168, 179);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--text);
+  font-weight: 700;
+  cursor: default;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-left: 2rem;
+  transition: 0.3s;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: var(--main);
+}
+
+.navbar .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: var(--main);
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--bg);
+  font-weight: 500;
+  margin-left: 2rem;
+  transition: 0.5s;
+}
+
+.navbar .btnLogin-popup:hover {
+  background: var(--second-main);
+}
+
+/* SLIDEBAR */
+.slidebar {
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  position: relative;
+}
+
+.imgslide {
+  display: flex;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+}
+
+/* Login */
+.wrapper {
+  position: absolute;
+  top: 75px;
+  right: 440px;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.2s ease;
+}
+
+.wrapper.active {
+  height: 520px;
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.wrapper.form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.btn-close {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  margin-left: 30px;
+  padding: 0.2rem 0.5rem;
+  background: var(--main);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--second-bg);
+  border-top-left-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  background: var(--second-main);
+}
+
+.form-box h2 {
+  font-size: 2rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid var(--text);
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  font-size: 1rem;
+  color: var(--text);
+  pointer-events: none;
+  font-weight: 700;
+  transition: 0.5s;
+  left: 5px;
+  top: -10px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.remember-forgot {
+  font-size: 0.9rem;
+  color: var(--text);
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  accent-color: var(--main);
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: var(--main);
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.btn1 {
+  width: 100%;
+  height: 45px;
+  background: var(--main);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #000;
+  font-weight: 500;
+}
+
+.btn1:hover {
+  background: var(--second-main);
+}

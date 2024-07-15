@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website dengan Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Bagian Header -->
+    <header class="header">
+      <a href="#" class="logo">LOGO</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" id="">Home</a>
+        <button class="btnLogin-popup">Login</button=>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Bagian Home -->
+    <div class="slidebar" id="home">
+      <div class="content-slide">
+        <div class="imgslide fade">
+          <img src="img/1.jpg" />
+        </div>
+        <div class="imgslide fade">
+          <img src="img/2.jpg" />
+        </div>
+        <div class="imgslide fade">
+          <img src="img/3.jpg" />
+        </div>
+      </div>
+    </div>
+    <!-- Home End -->
+
+    <!-- FORM LOGIN -->
+     <div class="wrapper">
+      <button class="btn-close">Close</button>
+      <div class="form-box">
+        <h2>Login</h2>
+        <form action="#" id="loginForm">
+          <div class="input-box">
+            <input type="email" required id="email"">
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <input type="password" required id="password"">
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember me</label>
+          </div>
+
+          <button type="submit" class="btn1">Login</button>
+        </form>
+      </div>
+    </div>
+    <!-- Form Login End -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
